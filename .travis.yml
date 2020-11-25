@@ -6,7 +6,7 @@ before_install:
   - docker build -t sariroti/docker-udemy -f Dockerfile.dev .
 
 script:
-  - docker run sariroti/docker-udemy npm run test 
+  - docker run sariroti/docker-udemy npm run test -- --coverage
 
 
 
